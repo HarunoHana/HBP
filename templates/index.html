@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %} Index {% endblock %}
+{% block content %}
+<div class="p-5 mb-4 bg-light rounded-3 home">
+  <div class="container-fluid py-5">
+    <h1 class="display-5 fw-bold home-phrase">Your Pet Care Center</h1>
+    <p class="col-md-8 fs-4 home-desc">Welcome to our website! We love pets and they are our families. We will take a good care of your family.  </p>
+    <a class="btn btn-primary btn-lg home-btn" href="{{ url_for('courses') }}" role="button">Courses</a>
+  </div>
+</div>
+
+<div class="row align-items-md-stretch">
+  <div class="col-md-12">
+    <div class="h-100 p-5 bg-light border rounded-3">
+      <h2>About Us</h2>
+      <br>
+      <p>At happy buddy pets we care about animals. We recognize they are more than just a pet. They are families. So please feel free to reach out to us if your family is in need!
+      </p>
+    </div>
+  </div>
+</div>
+{% endblock %}
