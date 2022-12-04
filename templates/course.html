@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %} Course {% endblock %}
+{% block content %}
+<h3>{{course.name}}</h3>
+<ul class="list-group">
+    <li class="list-group-item"><span class="fw-bold course-label">Pet Type:</span><span>{{course.pet}}</span></li>
+    <li class="list-group-item"><span class="fw-bold course-label">Start Date:</span><span>{{course.start_date}}</span></li>
+    <li class="list-group-item"><span class="fw-bold course-label">Length:</span><span>{{course.length}} Weeks</span></li>
+    <li class="list-group-item"><span class="fw-bold course-label">Course Level:</span><span>{{course.level}}</span></li>
+    <li class="list-group-item"><span class="fw-bold course-label">Start Time:</span><span>{{course.start_time}}</span></li>
+    <li class="list-group-item"><span class="fw-bold course-label">Duration:</span><span>{{course.duration}} Minutes</span></li>
+    <li class="list-group-item"><span class="fw-bold course-label">Trainer:</span><span>{{course.trainer_name}}</span></li>
+    <li class="list-group-item"><span class="fw-bold course-label">Description:</span><span>{{course.description}}</span></li>
+</ul>
+<br>
+<div class="d-grid gap-2 d-md-flex justify-content-md-start">
+    <a href="{{ url_for('edit_course', course_id=course.id) }}" class="btn btn-primary me-md-2" type="button">Edit class</a>
+    <a href="{{ url_for('delete_course', course_id=course.id) }}" class="btn btn-danger me-md-2" type="button">Delete this class</a>
+</div>
+{% endblock %}
