@@ -10,7 +10,7 @@ Happy Buddy Pets Course Management System is a Flask-based web application desig
 - **Responsive Design:** Thanks to Bootstrap, the application is responsive and user-friendly across different devices.
 
 ## Technology Used
-- **Python: Server-side scripting for backend logic.
-- **MySQL: Database management for storing scheduling data.
-- **HTML/CSS: Frontend presentation and styling.
-- **JavaScript: Enhanced user interactions on the frontend.
+- Python: Server-side scripting for backend logic.
+- MySQL: Database management for storing scheduling data.
+- HTML/CSS: Frontend presentation and styling.
+- JavaScript: Enhanced user interactions on the frontend.
